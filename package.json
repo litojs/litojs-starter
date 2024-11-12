@@ -1,0 +1,17 @@
+{
+  "name": "lito_boilerplate",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun run --watch apps/main.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "litojs": "../lito"
+  }
+}
