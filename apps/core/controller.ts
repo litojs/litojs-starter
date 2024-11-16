@@ -1,10 +1,13 @@
 import { Controller } from "litojs";
-import { MyFruit } from "./view";
-import { view } from "litojs/views";
+import { view } from "litojs/renderer";
+import { Fruit, MyFruits } from "./view";
 
 export class CoreController extends Controller {
   public index() {
-    const context = { fruits: ["Banana", "Apple", "Orange"] };
-    return view(MyFruit, context);
+    return view(MyFruits, { fruits: ["Apple", "Banana", "Orange"] });
+  }
+
+  public hello() {
+    return view(Fruit, { fruit: "New Fruit" });
   }
 }
