@@ -4,10 +4,13 @@ interface MyComponentProps {
 
 export function MyComponent(props: MyComponentProps) {
   return (
-    <div>
-      {props.fruits.map((fruit) => (
-        <div>{fruit}</div>
-      ))}
-    </div>
+    <main>
+      <h1>My favorite fruits</h1>
+      <div>
+        {props.fruits.map((fruit) => (
+          <div>{fruit}</div>
+        ))}
+      </div>
+    </main>
   );
 }

@@ -1,5 +1,6 @@
 import { Controller } from "litojs";
 import { view } from "litojs/utils";
+
 import { MyComponent } from "./view";
 
 export class CoreController extends Controller {
