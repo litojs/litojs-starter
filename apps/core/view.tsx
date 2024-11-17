@@ -1,32 +1,13 @@
-import { Form } from "litojs/components";
-
-export const Fruit = ({ fruit }: { fruit: string }) => {
-  return <li>{fruit}</li>;
-};
-
-interface MyFruitProps {
+interface MyComponentProps {
   fruits: string[];
 }
 
-export const MyFruits = ({ fruits }: MyFruitProps) => {
+export function MyComponent(props: MyComponentProps) {
   return (
     <div>
-      <h1>My favorite fruits:</h1>
-
-      <ul id="fruits">
-        {fruits.map((fruit) => {
-          return <li>{fruit}</li>;
-        })}
-      </ul>
-
-      <Form
-        method="POST"
-        url="/hello"
-        responseBehavior="replace"
-        target="#fruits"
-      >
-        <button>Get my new fruit</button>
-      </Form>
+      {props.fruits.map((fruit) => (
+        <div>{fruit}</div>
+      ))}
     </div>
   );
-};
+}
