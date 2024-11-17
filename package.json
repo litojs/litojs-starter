@@ -1,7 +1,7 @@
 {
   "name": "create-lito-app",
   "description": "A LitoJS boilerplate",
-  "bin": "./bin/cli/index.js",
+  "bin": "./bin/cli/index.cjs",
   "version": "0.1.0",
   "main": "apps/main.ts",
   "devDependencies": {
