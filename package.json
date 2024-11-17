@@ -1,7 +1,6 @@
 {
-  "name": "create-lito-app",
+  "name": "lito-starter",
   "description": "A LitoJS boilerplate",
-  "bin": "./bin/cli/index.cjs",
   "version": "0.1.0",
   "main": "apps/main.ts",
   "devDependencies": {
@@ -11,7 +10,6 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "postinstall": "npm prune",
     "start": "bun run --watch apps/main.ts"
   },
   "type": "module",

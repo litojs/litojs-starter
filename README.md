@@ -5,9 +5,6 @@ This is a boilerplate for Litojs. A pragmatic and batteries-included JavaScript 
 ```bash
 # install all dependencies
 bun i
-
-# we currently need this due to a bug in bun.js
-npm prune
 ```
 
 ```bash
