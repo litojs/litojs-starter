@@ -1,6 +1,7 @@
 {
   "name": "lito-starter",
   "description": "A LitoJS boilerplate",
+  "version": "0.0.1",
   "main": "apps/main.ts",
   "devDependencies": {
     "@types/bun": "latest"
