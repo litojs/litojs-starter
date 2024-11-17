@@ -1,15 +1,17 @@
-interface MyComponentProps {
-  fruits: string[];
-}
-
-export function MyComponent(props: MyComponentProps) {
+export function Home({ name }: { name: string }) {
   return (
-    <main>
-      <h1>My favorite fruits</h1>
-      <div>
-        {props.fruits.map((fruit) => (
-          <div>{fruit}</div>
-        ))}
+    <main class="h-screen flex justify-center items-center">
+      <div class="w-[500px] border p-12 rounded-lg space-y-4">
+        <section>
+          <h1 class="text-4xl font-semibold">{name} framework</h1>
+          <p>A pragmatic javascript fullstack framework</p>
+        </section>
+        <a
+          href="https://lito.indrazm.com"
+          class="block w-fit text-sm bg-indigo-600 text-white font-medium px-3 py-2 rounded-lg"
+        >
+          Read Documentation
+        </a>
       </div>
     </main>
   );
