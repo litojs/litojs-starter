@@ -1,5 +1,5 @@
 {
-  "name": "lito_boilerplate",
+  "name": "lito-starter",
   "description": "A LitoJS boilerplate",
   "main": "apps/main.ts",
   "devDependencies": {
