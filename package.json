@@ -20,6 +20,6 @@
   "dependencies": {
     "@kitajs/html": "^4.2.4",
     "@kitajs/ts-html-plugin": "^4.1.0",
-    "litojs": "../lito"
+    "litojs": "^0.0.0-experimental-3"
   }
 }
